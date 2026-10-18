@@ -5,3 +5,5 @@ __pycache__/
 .openai/
 .DS_Store
 Thumbs.db
+
+_site/

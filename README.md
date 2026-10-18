@@ -28,13 +28,13 @@ For manual editing, `build.py` contains the story, social links, clip selections
 - Mobile menu, game filter, keyboard photo navigation, Escape-to-close, and Discord copying were checked in the browser. The full setup tutorial player loaded. All-video playback and desktop visual inspection remain unverified.
 - Local page and image links, image alt attributes, heading counts, and JavaScript syntax were checked. This is not a full accessibility certification.
 
-## GitHub repository
+## Live website and publishing
 
-This package is prepared for a GitHub repository. It contains source, optimized images, and the generated website in `dist/`. ChatGPT Sites account configuration is excluded.
+Website: https://quadmann.github.io/QuadMannGaming/
 
-Extract the ZIP before uploading to GitHub. Upload the extracted files and folders, not the ZIP itself. Keep the `dist` folder intact.
+The GitHub Actions workflow in `.github/workflows/pages.yml` builds and checks the six pages, prepares their links for GitHub Pages, and publishes `_site/`. It runs after updates to `main`, or manually from Actions → Publish QuadMann Gaming → Run workflow.
 
-Uploading a repository stores the website code. Live website hosting is a separate step. This version uses root-relative links, so a GitHub Pages project site under `/repository-name/` needs base-path adjustments before deployment. A custom domain or domain-root host can serve `dist/` directly.
+Edit `build.py` for content and `dist/styles.css` or `dist/app.js` for design and interactions. Keep `dist/assets` for images. `prepare_pages.py` adjusts deployment paths without changing the local preview version.
 
 Official product reference: https://www.quadstick.com/
 Video source: https://www.youtube.com/@QuadMannGaming
