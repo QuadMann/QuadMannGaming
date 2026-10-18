@@ -5,6 +5,7 @@ from urllib.parse import urlsplit, unquote
 import json
 import re
 import shutil
+import hashlib
 
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / 'dist'
@@ -15,6 +16,9 @@ shutil.copytree(SOURCE, DEST, dirs_exist_ok=True)
 for page in DEST.rglob('*.html'):
     content = page.read_text(encoding='utf-8')
     content = re.sub(r'((?:href|src)=["\'])/(?!/)', lambda m: m[1] + PREFIX + '/', content)
+    for asset in ('styles.css', 'app.js'):
+        version = hashlib.sha256((SOURCE / asset).read_bytes()).hexdigest()[:12]
+        content = content.replace(f'/{asset}"', f'/{asset}?v={version}"')
     page.write_text(content, encoding='utf-8')
 
 script = DEST / 'app.js'
