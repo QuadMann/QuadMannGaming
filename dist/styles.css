@@ -40,3 +40,10 @@ dialog{background:#2d1643;border-color:#bd86df}dialog button{background:#54306d;
 @media(min-width:901px) and (max-width:1200px){.site-header{flex-wrap:wrap;justify-content:center;gap:5px;padding-top:12px;padding-bottom:10px}#main-nav{width:100%;justify-content:center;gap:18px}#main-nav a{font-size:11px;padding:8px 0}.story-section figure{top:145px}}
 @media(max-width:900px){.brand-grid{gap:14px}.brand-card{padding:22px}.brand-card h3{font-size:32px}}
 @media(max-width:620px){.brand-grid{grid-template-columns:1fr}.brand-card{padding:26px}.brand-card h3{font-size:36px}.faq-list{margin-top:26px;margin-bottom:30px}.faq-item summary{padding:20px;gap:12px}.faq-item h2{font-size:17px}.faq-answer{padding:0 20px 22px;font-size:15px}}
+
+/* Supplied QMG emblem and QuadMann Gaming wordmark. */
+.site-header>.brand{gap:10px;min-width:0}.header-emblem{width:64px;height:64px;object-fit:contain;border-radius:8px;flex-shrink:0}.header-wordmark{width:210px;height:70px;object-fit:contain;flex-shrink:0}
+@media(min-width:901px) and (max-width:1300px){.site-header{flex-wrap:wrap;justify-content:flex-start;gap:5px;padding-top:10px;padding-bottom:10px}#main-nav{width:100%;justify-content:space-between;gap:14px}#main-nav a{font-size:12px;padding:8px 0}.story-section figure{top:150px}html{scroll-padding-top:155px}}
+@media(max-width:900px){.header-emblem{width:50px;height:50px}.header-wordmark{width:165px;height:55px}.site-header{gap:12px}}
+@media(max-width:420px){.site-header>.brand{gap:6px}.header-emblem{width:42px;height:42px}.header-wordmark{width:145px;height:49px}.site-header{gap:8px}.menu-toggle{gap:8px;padding:10px}}
+@media(max-width:350px){.header-emblem{width:36px;height:36px}.header-wordmark{width:125px;height:42px}}
