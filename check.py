@@ -19,4 +19,4 @@ for p in root.rglob('*.html'):
  parser=Check(p);parser.feed(p.read_text(encoding='utf-8'))
  if parser.h1!=1:errors.append(f'{p}: h1 count {parser.h1}')
 assert not errors,'\n'.join(errors)
-print('PASS: seven pages; local navigation and assets resolve; one main heading per page; all images have alt attributes.')
+print('PASS: eight pages; local navigation and assets resolve; one main heading per page; all images have alt attributes.')

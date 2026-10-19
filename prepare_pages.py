@@ -50,5 +50,5 @@ for page in DEST.rglob('*.html'):
 for photo in gallery:
     check_url(photo['src'])
 assert "fetch('/gallery.json')" not in script.read_text(encoding='utf-8')
-assert len(list(DEST.rglob('*.html'))) == 7
-print('GitHub Pages artifact ready: all seven pages, links, assets, and gallery paths checked.')
+assert len(list(DEST.rglob('*.html'))) == 8
+print('GitHub Pages artifact ready: all eight pages, links, assets, and gallery paths checked.')
