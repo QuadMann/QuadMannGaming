@@ -42,8 +42,8 @@ dialog{background:#2d1643;border-color:#bd86df}dialog button{background:#54306d;
 @media(max-width:620px){.brand-grid{grid-template-columns:1fr}.brand-card{padding:26px}.brand-card h3{font-size:36px}.faq-list{margin-top:26px;margin-bottom:30px}.faq-item summary{padding:20px;gap:12px}.faq-item h2{font-size:17px}.faq-answer{padding:0 20px 22px;font-size:15px}}
 
 /* Transparent QuadMann Gaming header logo. */
-.site-header>.brand{min-width:0}.header-logo{width:280px;height:auto;object-fit:contain;flex-shrink:0}
-@media(min-width:901px) and (max-width:1300px){.site-header{flex-wrap:wrap;justify-content:flex-start;gap:5px;padding-top:10px;padding-bottom:10px}#main-nav{width:100%;justify-content:space-between;gap:14px}#main-nav a{font-size:12px;padding:8px 0}.story-section figure{top:150px}html{scroll-padding-top:155px}}
-@media(max-width:900px){.header-logo{width:220px}.site-header{gap:12px}}
-@media(max-width:420px){.header-logo{width:190px}.site-header{gap:8px}.menu-toggle{gap:8px;padding:10px}}
-@media(max-width:350px){.header-logo{width:165px}}
+.site-header>.brand{--logo-height:93.333px;min-width:0;gap:10px}.header-logo,.header-qmg{height:var(--logo-height);width:auto;object-fit:contain;flex-shrink:0}
+@media(min-width:901px) and (max-width:1450px){.site-header{flex-wrap:wrap;justify-content:flex-start;gap:5px;padding-top:10px;padding-bottom:10px}#main-nav{width:100%;justify-content:space-between;gap:14px}#main-nav a{font-size:12px;padding:8px 0}.story-section figure{top:150px}html{scroll-padding-top:155px}}
+@media(max-width:900px){.site-header>.brand{--logo-height:65px}.site-header{gap:12px}}
+@media(max-width:420px){.site-header>.brand{--logo-height:48px;gap:8px}.site-header{gap:8px}.menu-toggle{gap:8px;padding:10px}}
+@media(max-width:350px){.site-header>.brand{--logo-height:40px;gap:6px}}
